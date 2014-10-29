@@ -36,11 +36,11 @@ module Mitel
         @options ||= {}
       end
 
-      def self.method_missing(method_sym, *arguments, &block)
-        instance.send(method_sym, arguments, block)
+      def self.method_missing(method_sym, *_arguments, &_block)
+        instance.send(method_sym, _arguments, _block)
       end
 
-      def method_missing(method_sym, *arguments, &block)
+      def method_missing(method_sym, *_arguments, &_block)
         options[method_sym]
       end
     end
