@@ -3,8 +3,13 @@ require 'bundler/setup'
 
 Bundler.require(:default)
 
-require 'simplecov'
-SimpleCov.start
+if ENV['CI']
+  require 'codeclimate-test-reporter'
+  CodeClimate::TestReporter.start
+else
+  require 'simplecov'
+  SimpleCov.start
+end
 
 RSpec.configure do |config|
   # rspec-expectations config goes here. You can use an alternate

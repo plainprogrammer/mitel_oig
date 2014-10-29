@@ -1,5 +1,9 @@
 # Mitel::OIG
 
+[![Code Climate](https://codeclimate.com/github/plainprogrammer/mitel_oig/badges/gpa.svg)](https://codeclimate.com/github/plainprogrammer/mitel_oig)
+[![Test Coverage](https://codeclimate.com/github/plainprogrammer/mitel_oig/badges/coverage.svg)](https://codeclimate.com/github/plainprogrammer/mitel_oig)
+[![Build Status](https://travis-ci.org/plainprogrammer/mitel_oig.svg)](https://travis-ci.org/plainprogrammer/mitel_oig)
+
 This gem provides a client library for working with the Open Integration Gateway
 provided by Mitel phone systems. The library makes use of both the SOAP and REST
 interfaces to try to expose as much of the available functionality as possible.
