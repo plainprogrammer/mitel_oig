@@ -7,10 +7,10 @@ Gem::Specification.new do |spec|
   spec.name          = 'mitel_oig'
   spec.version       = Mitel::OIG::VERSION
   spec.authors       = ['James Thompson']
-  spec.email         = %w{james@buypd.com}
+  spec.email         = %w{james@plainprograms.com}
   spec.summary       = %q{A client library for Mitel's OIG service.}
   spec.description   = %q{A client linrary for working with Mitel's OIG services.}
-  spec.homepage      = ''
+  spec.homepage      = 'https://github.com/plainprogrammer/mitel_oig'
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files -z`.split("\x0")
