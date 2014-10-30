@@ -29,7 +29,26 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+### Configuration
+
+Before being able to use any of the Mitel::OIG classes to interact with OIG
+services, you will need to setup a valid configuration. The code package already
+incorporates the various WSDLs for the OIG services, but configuration for where
+to access your specific endpoint is necessary. Configuration is handled globally
+by the Mitel::OIG::Configuration class and you can set it up like so:
+
+```ruby
+Mitel::OIG::Configuration.set(:endpoint, 'https://192.168.0.1:8080')
+Mitel::OIG::Configuration.set(:application_name, 'MyOIGApp')
+Mitel::OIG::Configuration.set(:application_password, 'secret')
+Mitel::OIG::Configuration.set(:company_name, 'MyCompany')
+Mitel::OIG::Configuration.set(:local_password, 'secret')
+```
+
+All the options described above are required to properly authenticate your
+application with the OIG services. All these credentials are shared globally
+within your application and are automatically accessible to the classes provided
+by this gem.
 
 ## Contributing
 
